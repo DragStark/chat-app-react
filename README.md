@@ -1,4 +1,4 @@
-#After clone this app run this command to install node modules
+# After clone this app run this command to install node modules
 ```
 npm install
 ```
@@ -32,4 +32,4 @@ connectFirestoreEmulator(db, "localhost", 8080);
 npm start
 ```
 
-link demo: https://chatapp-f8f6c.web.app/
+## link demo: https://chatapp-f8f6c.web.app/
