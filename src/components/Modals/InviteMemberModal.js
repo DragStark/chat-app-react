@@ -43,6 +43,7 @@ function DebounceSelect({ fetchOptions, debounceTimeout = 300, ...props}) {
 async function fetchUserList(search, curMembers){
     let ref = query(collection(db,'users'), where('keywords','array-contains', search));
         ref = query(ref, orderBy('displayName'), limit(20));
+        console.log(ref);
     return getDocs(ref).then( snapshot => {
                 return snapshot.docs.map(doc => ({
                     label: doc.data().displayName,

@@ -1,5 +1,5 @@
-import firebase, { initializeApp } from "firebase/app";
-import { getAuth, FacebookAuthProvider, connectAuthEmulator } from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getAuth, FacebookAuthProvider, GoogleAuthProvider, connectAuthEmulator } from "firebase/auth";
 import {  getFirestore,connectFirestoreEmulator  } from "firebase/firestore";
 import 'firebase/auth';
 import 'firebase/analytics';
@@ -17,11 +17,12 @@ const firebaseConfig = {
 // Initialize Firebase
 initializeApp(firebaseConfig);
 
-const provider = new FacebookAuthProvider();
+const fbProvider = new FacebookAuthProvider();
+const ggProvider = new GoogleAuthProvider();
 const auth = getAuth();
 //connectAuthEmulator(auth,'http://localhost:9099');
 const db = getFirestore();
 //connectFirestoreEmulator(db, "localhost", 8080);
 
 
-export {auth, provider, db};
+export {auth, fbProvider, ggProvider , db};

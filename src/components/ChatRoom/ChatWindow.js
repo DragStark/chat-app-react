@@ -38,6 +38,7 @@ const ButtonGroupStyled = styled.div`
 
 const WrapperStyled = styled.div`
     height: 100vh;
+    overflow-y: hidden;
 `
 
 const ContentStyled = styled.div`
@@ -61,8 +62,27 @@ const FormStyled = styled(Form)`
 `
 
 const MessageListStyled = styled.div`
-    max-height: 100%;
+    max-height: calc(100% - 80)%;
     over-flow-y: auto ;
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
 `
 
 export default function ChatWindow() {
