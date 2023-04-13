@@ -1,14 +1,14 @@
-# After clone this app run this command to install node modules
+## After clone this app run this command to install node modules
 ```
 npm install
 ```
 
-# Run this command to install some libraries 
+## Run this command to install some libraries 
 ```
 npm install --save antd @ant-design/icons date-fns lodash styled-components react-router-dom firebase
 ```
 
-# for use fire base for your project, you must be replace the code below in firebase/config.js by your firebase project setting
+## for use fire base for your project, you must be replace the code below in firebase/config.js by your firebase project setting
 ```
 const firebaseConfig = {
   apiKey: "AIzaSyCX_Fs3KXQBAH-0N2D8CYWY30QG9SSFmaY",
@@ -21,15 +21,15 @@ const firebaseConfig = {
 };
 ```
 
-# if you want to use firebase emulator for testing by virtual data, uncomment lines below in firebase/config.js 
+## if you want to use firebase emulator for testing by virtual data, uncomment lines below in firebase/config.js 
 ```
 connectAuthEmulator(auth,'http://localhost:9099');
 connectFirestoreEmulator(db, "localhost", 8080);
 ```
 
-# Final, run this app by the command
+## Final, run this app by the command
 ```
 npm start
 ```
 
-## link demo: https://chatapp-f8f6c.web.app/
+### link demo: https://chatapp-f8f6c.web.app/
